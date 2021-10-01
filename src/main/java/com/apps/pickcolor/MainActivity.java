@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                                 int[] argbArray = envelope.getArgb();
                                 textView.setText(argbArray[1] + ", " + argbArray[2] + ", " + argbArray[3]);
                                 setCardColor(envelope);
-                                Toast.makeText(MainActivity.this, "Hex Code "+envelope.getHexCode(), Toast.LENGTH_LONG).show();
+                                Toast.makeText(MainActivity.this, "Hex Code "+envelope.getHexCode(), Toast.LENGTH_SHORT).show();
                             }
                         })
                 .setNegativeButton(getString(R.string.cancel),
@@ -63,9 +63,5 @@ public class MainActivity extends AppCompatActivity {
     private void setCardColor(ColorEnvelope envelope) {
         int color = envelope.getColor();
         cardView.setCardBackgroundColor(color);
-
-        Window win = getWindow();
-        win.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        win.setStatusBarColor(color);
     }
 }
