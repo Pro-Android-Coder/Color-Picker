@@ -43,16 +43,16 @@
         app:layout_constraintTop_toBottomOf="@+id/color"
         android:layout_marginTop="40dp"
         android:layout_marginHorizontal="10dp"
-        app:cardCornerRadius="15dp"
-        android:elevation="15dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="2dp"
         app:cardBackgroundColor="#F0F0F0">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="R G B"
-            android:textSize="40sp"
+            android:textSize="38sp"
             android:layout_gravity="start"
-            android:textStyle="bold"
+            android:textStyle="italic"
             android:textColor="@color/black"/>
 
         <TextView
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:textSize="40sp"
+            android:textSize="38sp"
             android:textStyle="bold"
             android:textColor="@color/black"/>
     </androidx.cardview.widget.CardView>
